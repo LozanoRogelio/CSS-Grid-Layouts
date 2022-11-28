@@ -11,6 +11,10 @@ body {
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(3, 100px);
+  gap: 10px;
+  justify-items: stretch;
+  align-items: stretch;
 }
 .grid-container > div {
   background: #ccc;
@@ -24,5 +28,24 @@ body {
 }
 
 .grid-container > div:nth-child(2) {
+  grid-column: span 3;
+}
+
+.grid-container > div:nth-child(3) {
+  grid-column: span 1;
+}
+
+.grid-container > div:nth-child(4) {
+  grid-column: 2 / 6;
+  align-self: end;
+}
+
+.grid-container > div:nth-child(5) {
+  grid-column: span 3;
+  justify-self: start;
+  align-self: end;
+}
+
+.grid-container > div:nth-child(6) {
   grid-column: span 3;
 }
