@@ -2,7 +2,7 @@
 
 body {
   margin: 20px;
-  font-family: "Poppins";
+  font-family: "Poppins", sans-serif;
   background: #d1dedd;
 }
 ul, li {
